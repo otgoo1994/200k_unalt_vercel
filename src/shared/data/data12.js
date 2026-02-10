@@ -1,0 +1,198 @@
+export const categories = [
+  { id: 0, name: "Excel" },
+  { id: 1, name: "Word" },
+  { id: 2, name: "Гарны хослол" },
+  { id: 3, name: "PowerPoint" },
+  { id: 4, name: "Аюулгүй байдал" },
+  { id: 5, name: "Компьютер" },
+  { id: 6, name: "Ёс зүй" },
+  { id: 7, name: "Интернэт" },
+];
+
+export const questions = [
+  {
+    id: 1,
+    category: 0,
+    level: 1,
+    label: "=A1/B1 томьёо юу хийх вэ?",
+    answers: [
+      { label: "Хуваана", answerYn: true },
+      { label: "Нэмнэ", answerYn: false },
+      { label: "Үржүүлнэ", answerYn: false },
+      { label: "Хасна", answerYn: false },
+    ],
+  },
+  {
+    id: 2,
+    category: 1,
+    level: 1,
+    label: "Текстийг зүүн тийш зэрэгцүүлэх (Align Left) товчлол?",
+    answers: [
+      { label: "Ctrl + L", answerYn: true },
+      { label: "Ctrl + R", answerYn: false },
+      { label: "Ctrl + E", answerYn: false },
+      { label: "Ctrl + J", answerYn: false },
+    ],
+  },
+  {
+    id: 3,
+    category: 2,
+    level: 2,
+    label: "Alt + F4 товчлуур юу хийдэг вэ?",
+    answers: [
+      { label: "Close (Хаах)", answerYn: true },
+      { label: "Refresh", answerYn: false },
+      { label: "Save", answerYn: false },
+      { label: "Open", answerYn: false },
+    ],
+  },
+  {
+    id: 4,
+    category: 5,
+    level: 2,
+    label: '"Software" (Програм хангамж) гэж юу вэ?',
+    answers: [
+      { label: "Компьютерийг ажиллуулах заавар, програмууд", answerYn: true },
+      { label: "Компьютерийн эд анги", answerYn: false },
+      { label: "Цахилгаан утас", answerYn: false },
+      { label: "Хулгана", answerYn: false },
+    ],
+  },
+  {
+    id: 5,
+    category: 4,
+    level: 3,
+    label: '"Backup" гэж юу вэ?',
+    answers: [
+      {
+        label: "Мэдээллийг алдахаас сэргийлж хуулбарлаж хадгалах",
+        answerYn: true,
+      },
+      { label: "Ухрах", answerYn: false },
+      { label: "Вирус", answerYn: false },
+      { label: "Програм", answerYn: false },
+    ],
+  },
+  {
+    id: 6,
+    category: 7,
+    level: 3,
+    label: '"Wi-Fi" гэж юу вэ?',
+    answers: [
+      { label: "Утасгүй сүлжээ", answerYn: true },
+      { label: "Утастай сүлжээ", answerYn: false },
+      { label: "Хиймэл дагуул", answerYn: false },
+      { label: "Гар утас", answerYn: false },
+    ],
+  },
+  {
+    id: 7,
+    category: 3,
+    level: 4,
+    label: "Слайд шоуг эхнээс нь эхлүүлэх товчлуур?",
+    answers: [
+      { label: "F5", answerYn: true },
+      { label: "Shift + F5", answerYn: false },
+      { label: "Alt + F5", answerYn: false },
+      { label: "Ctrl + F5", answerYn: false },
+    ],
+  },
+  {
+    id: 8,
+    category: 0,
+    level: 4,
+    label: "Бүх тоог нэмэх функц?",
+    answers: [
+      { label: "SUM", answerYn: true },
+      { label: "AVERAGE", answerYn: false },
+      { label: "MAX", answerYn: false },
+      { label: "MIN", answerYn: false },
+    ],
+  },
+  {
+    id: 9,
+    category: 2,
+    level: 5,
+    label: "Windows + E товчлуур юу хийдэг вэ?",
+    answers: [
+      { label: "File Explorer нээх", answerYn: true },
+      { label: "Internet Explorer нээх", answerYn: false },
+      { label: "Exit", answerYn: false },
+    ],
+  },
+  {
+    id: 10,
+    category: 6,
+    level: 5,
+    label: "Цахим орчинд бусдын хувийн мэдээллийг зөвшөөрөлгүй тараах нь?",
+    answers: [
+      { label: "Буруу, хууль зөрчсөн үйлдэл", answerYn: true },
+      { label: "Зөв", answerYn: false },
+      { label: "Хамаагүй", answerYn: false },
+    ],
+  },
+  {
+    id: 11,
+    category: 5,
+    level: 6,
+    label: '"OS" (Operating System) гэж юу вэ?',
+    answers: [
+      { label: "Үйлдлийн систем (Windows, Linux, macOS)", answerYn: true },
+      { label: "Office System", answerYn: false },
+      { label: "Open Source", answerYn: false },
+    ],
+  },
+  {
+    id: 12,
+    category: 1,
+    level: 6,
+    label: "Фонтын төрлийг өөрчлөх хэсэг?",
+    answers: [
+      { label: "Font Family (Arial, Times New Roman...)", answerYn: true },
+      { label: "Font Size", answerYn: false },
+      { label: "Font Color", answerYn: false },
+    ],
+  },
+  {
+    id: 13,
+    category: 0,
+    level: 7,
+    label: "=MEDIAN(1, 3, 5) функцийн үр дүн?",
+    answers: [
+      { label: "3", answerYn: true },
+      { label: "1", answerYn: false },
+      { label: "5", answerYn: false },
+    ],
+  },
+  {
+    id: 14,
+    category: 7,
+    level: 7,
+    label: '"Privacy" гэж юу вэ?',
+    answers: [
+      { label: "Хувийн нууц", answerYn: true },
+      { label: "Аюулгүй байдал", answerYn: false },
+      { label: "Олон нийтийн сүлжээ", answerYn: false },
+    ],
+  },
+  {
+    id: 15,
+    category: 3,
+    level: 8,
+    label: '"Online" гэж юу вэ?',
+    answers: [
+      { label: "Сүлжээнд холбогдсон", answerYn: true },
+      { label: "Сүлжээнд холбогдоогүй", answerYn: false },
+    ],
+  },
+  {
+    id: 16,
+    category: 4,
+    level: 8,
+    label: "Слайд хоорондын шилжилтийг юу гэдэг вэ?",
+    answers: [
+      { label: "Transition", answerYn: true },
+      { label: "Animation", answerYn: false },
+    ],
+  },
+];

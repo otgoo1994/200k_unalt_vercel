@@ -1,0 +1,198 @@
+export const categories = [
+  { id: 0, name: "Excel" },
+  { id: 1, name: "Word" },
+  { id: 2, name: "Гарны хослол" },
+  { id: 3, name: "PowerPoint" },
+  { id: 4, name: "Аюулгүй байдал" },
+  { id: 5, name: "Компьютер" },
+  { id: 6, name: "Ёс зүй" },
+  { id: 7, name: "Интернэт" },
+];
+
+export const questions = [
+  {
+    id: 1,
+    category: 0,
+    level: 1,
+    label: "=ABS(-10) функцийн үр дүн?",
+    answers: [
+      { label: "Error", answerYn: false },
+      { label: "-10", answerYn: false },
+      { label: "10 (Модуль)", answerYn: true },
+      { label: "0", answerYn: false },
+    ],
+  },
+  {
+    id: 2,
+    category: 1,
+    level: 1,
+    label: "Текстийг хуулах (Copy) товчлол?",
+    answers: [
+      { label: "Ctrl + Z", answerYn: false },
+      { label: "Ctrl + C", answerYn: true },
+      { label: "Ctrl + X", answerYn: false },
+      { label: "Ctrl + V", answerYn: false },
+    ],
+  },
+  {
+    id: 3,
+    category: 2,
+    level: 2,
+    label: "Shift + Delete товчлуур юу хийдэг вэ?",
+    answers: [
+      { label: "Restore", answerYn: false },
+      { label: "Файлыг Recycle Bin-д хийхгүйгээр шууд устгах", answerYn: true },
+      { label: "Delete", answerYn: false },
+      { label: "Rename", answerYn: false },
+    ],
+  },
+  {
+    id: 4,
+    category: 3,
+    level: 2,
+    label: "Recycle Bin гэж юу вэ?",
+    answers: [
+      { label: "Програм", answerYn: false },
+      { label: "Вирусны сав", answerYn: false },
+      { label: "Устгасан файлуудыг түр хадгалах сав", answerYn: true },
+      { label: "Файл хадгалах газар", answerYn: false },
+    ],
+  },
+  {
+    id: 5,
+    category: 0,
+    level: 3,
+    label: "Virus гэж юу вэ?",
+    answers: [
+      { label: "Компьютерт хор хөнөөл учруулдаг програм", answerYn: true },
+      { label: "Тоглоом", answerYn: false },
+      { label: "Зураг", answerYn: false },
+      { label: "Компьютерийн эд анги", answerYn: false },
+    ],
+  },
+  {
+    id: 6,
+    category: 1,
+    level: 3,
+    label: "Offline гэж юу вэ?",
+    answers: [
+      { label: "Тоглоом", answerYn: false },
+      { label: "Сүлжээнд холбогдсон", answerYn: false },
+      { label: "Сүлжээнд холбогдоогүй", answerYn: true },
+      { label: "Компьютер асаалттай", answerYn: false },
+    ],
+  },
+  {
+    id: 7,
+    category: 2,
+    level: 4,
+    label: "Тухайн слайдаас эхлэн слайд шоуг тоглуулах товчлол?",
+    answers: [
+      { label: "Alt + F5", answerYn: false },
+      { label: "F5", answerYn: true },
+      { label: "Shift + F5", answerYn: false },
+      { label: "Ctrl + F5", answerYn: false },
+    ],
+  },
+  {
+    id: 8,
+    category: 3,
+    level: 4,
+    label: "Дундаж утгыг олох функц?",
+    answers: [
+      { label: "MIN", answerYn: false },
+      { label: "MAX", answerYn: false },
+      { label: "AVERAGE", answerYn: true },
+      { label: "SUM", answerYn: false },
+    ],
+  },
+  {
+    id: 9,
+    category: 0,
+    level: 5,
+    label: "Esc товчлуур юу хийдэг вэ?",
+    answers: [
+      { label: "Enter", answerYn: false },
+      { label: "Cancel / Exit (Болих / Гарах)", answerYn: true },
+      { label: "Save", answerYn: false },
+    ],
+  },
+  {
+    id: 10,
+    category: 1,
+    level: 5,
+    label: "Интернэтэд танихгүй хүнд хувийн мэдээллээ өгөх нь?",
+    answers: [
+      { label: "Хамаагүй", answerYn: false },
+      { label: "Буруу, аюултай", answerYn: true },
+      { label: "Зөв", answerYn: false },
+    ],
+  },
+  {
+    id: 11,
+    category: 2,
+    level: 6,
+    label: "Desktop гэж юу вэ?",
+    answers: [
+      { label: "Зөөврийн компьютер", answerYn: false },
+      { label: "Компьютерийн ширээ", answerYn: false },
+      {
+        label: "Үйлдлийн системийн үндсэн дэлгэц (Ажлын талбар)",
+        answerYn: true,
+      },
+    ],
+  },
+  {
+    id: 12,
+    category: 3,
+    level: 6,
+    label: "Текстийн өнгийг өөрчлөх хэсэг?",
+    answers: [
+      { label: "Background Color", answerYn: false },
+      { label: "Font Color", answerYn: true },
+      { label: "Highlight Color", answerYn: false },
+    ],
+  },
+  {
+    id: 13,
+    category: 0,
+    level: 7,
+    label: "=MODE(1, 2, 2, 3) функцийн үр дүн?",
+    answers: [
+      { label: "3", answerYn: false },
+      { label: "2 (Моод - Хамгийн олон давтагдсан тоо)", answerYn: true },
+      { label: "1", answerYn: false },
+    ],
+  },
+  {
+    id: 14,
+    category: 1,
+    level: 7,
+    label: "Компьютерээ вирусаас хамгаалахын тулд юу суулгах хэрэгтэй вэ?",
+    answers: [
+      { label: "Game", answerYn: false },
+      { label: "Office", answerYn: false },
+      { label: "Antivirus software", answerYn: true },
+    ],
+  },
+  {
+    id: 15,
+    category: 2,
+    level: 8,
+    label: "Homepage гэж юу вэ?",
+    answers: [
+      { label: "Гэрийн хуудас", answerYn: false },
+      { label: "Вэб сайтын нүүр хуудас", answerYn: true },
+    ],
+  },
+  {
+    id: 16,
+    category: 3,
+    level: 8,
+    label: "Слайд доторх объектуудын хөдөлгөөнийг юу гэдэг вэ?",
+    answers: [
+      { label: "Transition", answerYn: false },
+      { label: "Animation", answerYn: true },
+    ],
+  },
+];
