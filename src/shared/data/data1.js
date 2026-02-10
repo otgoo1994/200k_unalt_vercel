@@ -349,16 +349,16 @@ export const questions = [
   },
   {
     id: 16,
-    category: 1,
+    category: 0,
     level: 8,
-    label: '"Endnote" нь "Footnote"-оос юугаараа ялгаатай вэ?',
+    label: '"=ABS(-10) функцийн үр дүн?',
     answers: [
       {
-        label: "Баримтын эсвэл бүлгийн хамгийн төгсгөлд байрладаг ",
+        label: "10",
         answerYn: true,
       },
       {
-        label: "Ялгаагүй ",
+        label: "-10 ",
         answerYn: false,
       },
     ],
