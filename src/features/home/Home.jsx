@@ -272,6 +272,14 @@ export const Home = () => {
     setIsOpen("settingsModal");
   };
 
+  const getCurrentAnswer = () => {
+    if (!currentQuestion) return "";
+    const currIdx = currentQuestion.answers.findIndex(
+      (ans) => ans.answerYn == true,
+    );
+    return currentQuestion.answers[currIdx].label;
+  };
+
   return (
     <div id="app">
       <div className="header">
@@ -515,6 +523,7 @@ export const Home = () => {
       {isOpen == "loseModal" && (
         <div className="modal lose">
           <p>Уучлаарай, хариулт буруу байна.</p>
+          <p>Зөв хариулт: {getCurrentAnswer()}</p>
           <button onClick={handleReset}>Дахин эхлүүлэх</button>
         </div>
       )}
@@ -525,6 +534,7 @@ export const Home = () => {
             <br />
             өөртөө хадгаллаа
           </p>
+          <p>Зөв хариулт: {getCurrentAnswer()}</p>
           <button onClick={handleContinue}>Үргэлжлүүлэх</button>
         </div>
       )}
