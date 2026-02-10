@@ -214,7 +214,7 @@ export const Home = () => {
     setBalance(answerBalance);
     if (answerBalance > 0) {
       setAnswered((prev) => prev + 1);
-      if (currentLevel >= 7) {
+      if (currentLevel >= 8) {
         setIsOpen("completedModal");
         winnerRef.current.pause();
         winnerRef.current.currentTime = 0;
@@ -257,7 +257,7 @@ export const Home = () => {
     setCurrentBalance([0, 0, 0, 0]);
     setBalance(200000);
     setIsOpen("beginModal");
-    setAnswered(0);
+    setAnswered(1);
   };
 
   const handleSkipTime = () => {

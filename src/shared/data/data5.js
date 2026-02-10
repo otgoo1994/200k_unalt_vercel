@@ -29,7 +29,7 @@ export const questions = [
     id: 2,
     category: 1,
     level: 1,
-    label: 'Текстийг "Justify" буюу хоёр талд тэгшлэх товчлол?',
+    label: 'Текстийг яаж хоёр талдаа зэрэгцүүлэх вэ?',
     answers: [
       { label: "Ctrl + L", answerYn: false },
       { label: "Ctrl + R", answerYn: false },
@@ -41,7 +41,7 @@ export const questions = [
     id: 3,
     category: 2,
     level: 2,
-    label: "Excel-д одоогийн цагийг (Time) оруулах товчлол?",
+    label: "Excel-д одоогийн цагийг оруулах товчлол?",
     answers: [
       { label: "Ctrl + ;", answerYn: false },
       { label: "Ctrl + Shift + ;", answerYn: true },
@@ -168,9 +168,9 @@ export const questions = [
     category: 1,
     level: 6,
     label:
-      '"Table of Contents" (Гарчиг) үүсгэхийн тулд текстүүдийг юутай холбох шаардлагатай вэ?',
+      'Гарчиг үүсгэхийн тулд текстүүдийг юутай холбох шаардлагатай вэ?',
     answers: [
-      { label: "Heading Styles (Heading 1, 2...)", answerYn: true },
+      { label: "Heading Styles", answerYn: true },
       { label: "Page Numbers", answerYn: false },
       { label: "Bold", answerYn: false },
     ],

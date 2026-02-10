@@ -80,7 +80,7 @@ export const questions = [
         answerYn: false,
       },
       {
-        label: "Дэлгэцийн хэсэгчилсэн агшин (Screenshot) авах",
+        label: "Дэлгэцийн хэсэгчилсэн агшин авах",
         answerYn: true,
       },
     ],
